@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100vh;
+	width: 100%;
+	font-family: "Lato", sans-serif;
+	color: #191919;
+}
+
+.container{
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+}
+
+h2{
+	font-size: 34px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+h3{
+	font-size: 21px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+p{
+	font-size: 16px;
+}
+
+button{
+	background: #FFCD00;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: center;
+	transition: all .3s;
+}
+
+button:hover{
+	box-shadow: 0px 0px 5px #FFCD00;
+}
+
+.separador{
+	display: inline-block;
+	width: 70px;
+	height: 3px;
+	border-radius: 1.5px;
+	background: #FFCD00;
+	margin-bottom: 15px;
+}
+
+.cabecalho{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Header
+----------------------------------------------------------------*/
+
+header{
+	background: #191919;
+	height: 70px;
+}
+
+header div{
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 21px;
+	color: white;
+}
+
+header div a{
+	display: inline-block;
+	width: 70px;
+	height: 100%;
+	background: url('img/logo.png');
+	background-size: cover;
+	text-indent: -9000px;
+}
+
+header div span i{
+	color: #FFCD00;
+}
+
+/* Capa
+----------------------------------------------------------------*/
+
+main{
+	height: 668px;
+	background: #191919 url('img/bg-img.png') no-repeat center;
+	display: flex;
+	align-items: center;
+}
+
+main .conteudo{
+	width: 40%;
+	align-self: flex-start;
+}
+
+main .conteudo h2{
+	color: #FFCD00;
+}
+
+main .conteudo p{
+	color: white;
+	margin-bottom: 30px;
+}
+
+/* Sobre
+----------------------------------------------------------------*/
+#sobre{
+	background: white;
+}
+
+#sobre .container{
+	align-items: center;
+	justify-content: space-around;
+	padding: 90px;
+}
+
+#sobre .conteudo{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#sobre .conteudo div:first-child{
+	width: 40%;
+}
+
+#sobre .conteudo div:last-child{
+	width: 370px;
+}
+
+#sobre .depoimento{
+	background: #FFCD00;
+	color: #191919;
+	text-align: center;
+	padding: 15px;
+}
+
+#sobre .depoimento i{
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+
+#sobre blockquote{
+	font-size: 21px;
+	font-weight: 600;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+#sobre .nome{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Serviços
+----------------------------------------------------------------*/
+#servicos{
+	background: white;
+}
+
+#servicos .container{
+	justify-content: center;
+	flex-direction: column;
+	padding: 60px;
+}
+
+#servicos .container-itens-servicos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#servicos .itens-servicos{
+	width: 220px;
+	height: 418px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#servicos .itens-servicos .img{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+#servicos .itens-servicos .img img{
+	width: 100%;
+	position: relative;
+	top: -20%;
+}
+
+#servicos .itens-servicos h2{
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+#servicos .itens-servicos p{
+	text-align: center;
+}
+
+/* Marque horario
+----------------------------------------------------------------*/
+#marcar{
+	background: #191919;
+}
+
+#marcar .container{
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+}
+
+#marcar h2, #marcar h3{
+	color: white;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+form ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+form li {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+form label{
+	display: block;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+form input, select{
+	width: 370px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+	padding: 0 15px;
+}
+
+#redes-sociais{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#redes-sociais a{
+	text-decoration: none;
+	color: #FFCD00;
+	font-size: 55px;
+	margin: 0 15px;
+}
+
+/* Footer
+----------------------------------------------------------------*/
+footer{
+	background: #FFCD00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer img{
+	width: 70px;
+}
+
+/* Media Queries
+----------------------------------------------------------------*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	/* Header
+	------------------------------------------------*/
+	#endereço{
+		display: none;
+	}
+	/* Capa
+	------------------------------------------------*/
+	#capa .conteudo{
+		width: 100%;
+		align-self: center;
+	}
+	/* Sobre
+	------------------------------------------------*/
+	#sobre .container .conteudo div:first-child{
+		width: 100%;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* Header
+	------------------------------------------------*/
+	#endereço{
+		display: none;
+	}
+	/* Capa
+	------------------------------------------------*/
+	#capa .conteudo{
+		width: 100%;
+		align-self: center;
+	}
+	/* Sobre
+	------------------------------------------------*/
+	#sobre .container .conteudo div:first-child{
+		width: 100%;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* Sobre
+	------------------------------------------------*/
+	#sobre .container .conteudo div:first-child{
+		width: 100%;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
