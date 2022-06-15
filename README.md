@@ -1,1 +1,2 @@
-Meu primeiro projeto ; Página comercial de uma barbearia ; Responsiva
+Página comercial de uma barbearia.
+(projeto fictício)
